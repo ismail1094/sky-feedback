@@ -3,6 +3,7 @@
 <p>Hello {{ customer_name }}, please rate {{ engineer_name }}</p>
 <form action="/submit" method="post">
     <p>Please select a rating from 1 to 10</p>
+    <input type="hidden" name="engineer_name" value='{{ engineer_name }}'>
     <label>
         <input type="radio" name="rating" value="1"> 1
     </label>
