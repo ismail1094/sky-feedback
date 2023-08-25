@@ -29,4 +29,4 @@ def submit():
     print(ratings_list)
 
     # Return a message indicating the submitted rating and engineer name
-    return "Rating {} submitted for {}.".format(rating, engineer_name)
+    return render_template("success.html", rating=rating, engineer_name=engineer_name)
