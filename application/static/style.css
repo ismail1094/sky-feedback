@@ -6,11 +6,31 @@
 body {
     background-color: white;
     color: #4D4D4D;
-    font-size: 18px;
+    font-size: 22px;
     text-align: center;
+    font-family: 'Lato', sans-serif;
 }
 
 main {
     padding: 50px;
 }
 
+p {
+    padding-bottom: 20px;
+}
+
+button {
+    margin: 40px;
+    padding: 15px 40px 15px 40px;
+    color: white;
+    background-color: #000FF5;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+label {
+    padding: 0 7px;
+    font-weight: bold;
+}
