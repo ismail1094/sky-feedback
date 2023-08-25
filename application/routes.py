@@ -6,10 +6,10 @@ ratings_list = []
 
 
 # Define a route for the home page
-@app.route('/')
-def home():
+@app.route('/<engineer_name>/<customer_name>')
+def home(engineer_name, customer_name):
     # Render the 'home.html' template and provide values for placeholders
-    return render_template("home.html", customer_name="Bob", engineer_name="Rob")
+    return render_template("home.html", engineer_name=engineer_name, customer_name=customer_name)
 
 
 # Define a route for form submission
